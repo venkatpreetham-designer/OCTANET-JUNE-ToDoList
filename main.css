@@ -1,0 +1,165 @@
+/* LET THE STYLING BEGIN */
+@font-face {
+    font-family: Chela One;
+    src: url(ChelaOne-Regular.ttf);
+}
+
+*{
+    font-family: "Chela One";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+}
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(dd.png);
+    background-size: cover;
+}
+.container {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 500px;
+}
+.container h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 2px;
+    -webkit-text-stroke: 3px rgb(174, 0, 0);
+    color: #ffde9bf1;
+}
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid rgb(174, 0, 0);
+    border-radius: 40px;
+}
+.input-container button {
+    padding: 5px;
+    background-color: hsl(211, 100%, 50%);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.2px hsl(0, 0%, 0%);
+    width: 30%;
+    border: 3px solid transparent;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.input-container button:hover{
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .8px hsl(0, 0%, 100%);
+    border-bottom: 5px solid rgb(174, 0, 0);
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid #d11717;
+    border-radius: 40px;
+}
+.task-list li:hover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid #d11717;
+    background-color: #ffde9bf1;
+}
+
+.task-list li .task {
+    flex: 1;
+}
+.task-list li .task.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+.task-list li .actions {
+    display: flex;
+    align-items: center;
+}
+.task-list li .actions input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 40px;
+}
+.task-list li .actions .delete {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.filters button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 40px;
+}
+.filters button.delete-all {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.2px hsl(0, 0%, 0%);
+    border: 8px solid transparent;
+}
+
+.filters button.delete-all:hover{   
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .8px hsl(0, 0%, 100%);
+    border-bottom: 5px solid rgb(174, 0, 0);
+}
+
+.filters button.completed {
+    background-color: green;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.2px hsl(0, 0%, 0%);
+    border: 8px solid transparent;
+}
+
+.filters button.completed:hover {
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .8px hsl(0, 0%, 100%);
+    border-bottom: 5px solid rgb(174, 0, 0);
+}
+
+.filters button.incomplete {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.2px hsl(0, 0%, 0%);
+    border: 8px solid transparent;
+}
+
+.filters button.incomplete:hover {
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .8px hsl(0, 0%, 100%);
+    border-bottom: 5px solid rgb(174, 0, 0);
+}
+
+.delete:hover{
+    cursor: pointer;
+}
